@@ -3,6 +3,7 @@ https://willwarren.com/2014/07/03/roll-dynamic-dns-service-using-amazon-route53/
     sudo aptitude install awscli
 
 Set up IAM access credentials (use domain-manager user)
+    
     $ aws configure
     Access Key ID: <enter aws access key> 
     Secret Access Key: <enter aws secret key> 
