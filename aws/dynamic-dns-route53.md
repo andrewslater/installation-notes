@@ -8,7 +8,7 @@ Set up IAM access credentials (use domain-manager user)
     Access Key ID: <enter aws access key> 
     Secret Access Key: <enter aws secret key> 
 
-Create [/home/ubuntu/update-route53.sh](scripts/update_route_53.sh)
+Create [/home/ubuntu/update-route53.sh](scripts/update-route53.sh)
 
 Add cron entry to run script at boot and every 30 min (Example shows multiple subdomains being shared by the same server)
     
