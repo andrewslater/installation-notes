@@ -1,0 +1,8 @@
+# Change AWS ip based hostname to desired hostname in the following files
+/etc/hostname
+/etc/hosts
+
+# Change the hostname 
+sudo hostname your-new-hostname.com
+
+
