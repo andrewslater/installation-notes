@@ -1,2 +1,2 @@
-  # Get public ip address from the command line
-  dig +short myip.opendns.com @resolver1.opendns.com
+# Get public ip address from the command line
+dig +short myip.opendns.com @resolver1.opendns.com
