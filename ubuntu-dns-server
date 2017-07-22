@@ -1,0 +1,30 @@
+# Install bind9
+sudo apt-get install bind9
+
+# Example: Host 'saturn' on internal network. 
+# FILE: /etc/bind/db.saturn
+# PURPOSE: Will cause 'saturn' 'plex.saturn' and 'jenkins.saturn' to resolve to 192.168.1.122
+
+; Comments start with simicolons
+$TTL    604800
+@       IN      SOA     saturn. root.saturn. (
+                             10         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      saturn.
+@       IN      A       192.168.1.122
+plex    A       192.168.1.122
+jenkins A       192.168.1.122
+
+# Add the following to /etc/bind/named.conf.default-zones in order to create the zone for our 'saturn' host
+
+zone "phobos" {
+        type master;
+        file "/etc/bind/db.phobos";
+};
+
+# Configure your router to use the ip address for the server you have running bind9 as the primary DNS gateway
+# NOTE: Remeber to use static ip addresses
