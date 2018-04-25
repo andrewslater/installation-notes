@@ -1,0 +1,2 @@
+## Gain Bash Access to Running Container
+`docker exec -it {containerId} /bin/bash`
