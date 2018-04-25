@@ -1,2 +1,9 @@
 ## Gain Bash Access to Running Container
-`docker exec -it {containerId} /bin/bash`
+docker exec -it {containerId} /bin/bash
+
+## Build Docker Image (in directory with Dockerfile)
+docker build -t {imageName} .
+
+## Run docker container with port forwarding to host 
+## (port 8080 on the container will be exposed on port 8888 on the host)
+docker run -p 127.0.0.1:8888:8080 {imageName}
