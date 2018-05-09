@@ -7,3 +7,9 @@ docker build -t {imageName} .
 ## Run docker container with port forwarding to host 
 ## (port 8080 on the container will be exposed on port 8888 on the host)
 docker run -p 127.0.0.1:8888:8080 {imageName}
+
+# Remove all stopped containers
+docker rm $(docker ps -a -q)
+
+# Remove all <none> images
+docker rmi $(docker images -f "dangling=true" -q)
