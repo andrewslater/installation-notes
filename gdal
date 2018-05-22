@@ -1,0 +1,2 @@
+# Convert GeoTIFF to tiled version which can be rendered much faster
+gdal_translate -co "TILED=YES"  original.tif original-tiled.tif
