@@ -1,0 +1,2 @@
+# Dump data from a single table (no schema)
+pg_dump -h localhost -p 5432 -U <user> -t <table-name> --data-only <db-name> > /tmp/table_data.sql
