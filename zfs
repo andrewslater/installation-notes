@@ -1,0 +1,8 @@
+# List all pools
+sudo zpool list
+
+# View detailed info about a {pool}
+zpool status -v {pool}
+
+# Scrub a {pool} -- Do this periodically (suggested monthly) to protect against bit rot, especially for infrequently read data
+sudo zpool scrub {pool}
