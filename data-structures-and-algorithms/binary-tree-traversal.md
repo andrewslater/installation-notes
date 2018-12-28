@@ -1,3 +1,4 @@
+## Tree Node Structure
 ```java
 public class TreeNode {
   public int val;
@@ -10,7 +11,7 @@ public class TreeNode {
 ```
 
 ## Breadth-First Traversal
-With BFS we are traversing the tree one level at a time from the top to the bottom. This can be accomplished with the use of a queue. We simply add the root node to a queue and then loop until the queue is empty while visiting the dequeued node and adding its children tot he queue.
+With BFS we are traversing the tree one level at a time from the top to the bottom. This can be accomplished with the use of a queue.
 
 ```java
 public void bfs(TreeNode root) {
@@ -27,13 +28,15 @@ public void bfs(TreeNode root) {
 ```
 
 ## Depth-First Traversal
-There are three types of depth-first tree traversal methods: Inorder, Preorder, Postorder. You can remember the meaning of each by thinking of how the root node is treated:
+There are three types of depth-first tree traversal: Inorder, Preorder, Postorder. You can remember the meaning of each by thinking about how the root node is treated:
 
-**In**order - The nodes are process **in** order from left to right.  
-**Pre**order - The root node is processed before(**pre**) left and right nodes.  
-**Post**order - The root node is processed after(**post**) left and right nodes.  
+**In**order - The nodes are visited **in** order from left to right (Left -> Root -> Right).  
+**Pre**order - The root node is visited before(**pre**) left and right nodes (Root -> Left -> Right).  
+**Post**order - The root node is visited after(**post**) left and right nodes (Left -> Right -> Root).  
 
 ### Inorder (Left - Root - Right)
+Inorder traversal can be used on a binary search tree (BST) to visit nodes in ascending or descending order.
+
 #### Recursive Method
 ```java
 public void dfs(TreeNode root) {
