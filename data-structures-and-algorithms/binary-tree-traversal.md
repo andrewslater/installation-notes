@@ -112,7 +112,7 @@ public void dfs(TreeNode root) {
 ```java
 public void dfs(TreeNode root) {
   Stack<TreeNode> stack1 = new Stack<>();
-  Stack<TreeNode> stack2 = new Stack<>()'
+  Stack<TreeNode> stack2 = new Stack<>();
   stack1.push(root);
   
   while (!stack1.isEmpty()) {
