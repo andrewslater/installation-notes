@@ -13,3 +13,6 @@ network:
             nameservers:
               addresses: [8.8.8.8,8.8.4.4]
     version: 2
+
+# Run the following to apply changes:
+sudo netplan apply
