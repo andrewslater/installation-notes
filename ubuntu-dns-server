@@ -32,7 +32,7 @@ zone "phobos" {
 # Dump DNS Cache to /var/cache/bind/named_dump.db
 rndc dumpdb -cache
 
-# View DNS Cache
+# Flush DNS Cache
 rndc flush
 
 
