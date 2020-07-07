@@ -28,3 +28,11 @@ zone "phobos" {
 
 # Configure your router to use the ip address for the server you have running bind9 as the primary DNS gateway
 # NOTE: Remeber to use static ip addresses
+
+# Dump DNS Cache to /var/cache/bind/named_dump.db
+rndc dumpdb -cache
+
+# View DNS Cache
+rndc flush
+
+
