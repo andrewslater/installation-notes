@@ -1,0 +1,17 @@
+# Show status of all services (systemctl)
+systemctl list-units
+
+# Show status of all services (legacy)
+service --status-all
+
+# Enable service to start on boot
+sudo systemctl enable <service-name>
+
+# Disable service from starting on boot
+sudo systemctl disable <service-name>
+
+# Show service status (multiple ways)
+systemctl status <service-name>
+service <service-name> status
+
+
