@@ -1,0 +1,17 @@
+# See status of all services
+service --status-all
+
+# See package information
+apt-cache search <package-name>
+
+# Update all package info
+sudo apt update
+
+# Upgrade all packages
+sudo apt upgrade
+
+# systemctl
+## List all services 
+systemctl -at service
+
+
