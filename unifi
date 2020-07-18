@@ -1,0 +1,8 @@
+LOCAL - Traffic destined for the USG
+IN    - Traffic destined for the interface in question
+OUT   - Traffic leaving the interface in question
+
+LAN_LOCAL - Traffic from 10.0.0.2-254 -> 10.0.0.1
+WAN_LOCAL - Traffic from Internet -> 10.0.0.1
+LAN_IN - 
+WAN_IN - 
