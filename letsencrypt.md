@@ -17,14 +17,17 @@ Add a location block for your virtual host that will serve challenge files from 
 ```
 location /.well-known/acme-challenge/ {
     default_type "text/plain";
-    alias /var/www/letsencrypt/;
+    root /var/www/letsencrypt/;
 }
 ```
 
 Tell letsencrypt to put challenge files in `/var/www/letsencrypt`.
 
+### Generate a test certifcate to avoid hitting usage limits
+`certbot certonly --test-cert  --webroot --webroot-path /var/www/letsencrypt -d foo.example.com`
+
 ### Generate the cert
-`./letsencrypt-auto certonly --webroot --webroot-path /var/www/letsencrypt -d foo.example.com`
+`certbot certonly --webroot --webroot-path /var/www/letsencrypt -d foo.example.com`
 
 ## Serve challenge files w/ lighttp
 `sudo apt-get install lighttpd`
