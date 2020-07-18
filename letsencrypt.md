@@ -12,7 +12,7 @@ sudo apt update
 sudo apt-get install letsencrypt
 ```
 
-## Service challenge files w/ nginx
+## Serve challenge files w/ nginx
 Add a location block for your virtual host that will serve challenge files from `/var/www/letsencrypt`
 ```
 location /.well-known/acme-challenge/ {
