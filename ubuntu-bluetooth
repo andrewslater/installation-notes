@@ -1,0 +1,4 @@
+# If Xbox controller fails to pair due to e.g.
+# "Can't store name for private addressed device /org/bluez/hci0/dev_65_C5_FF_E1_1A_24" 
+# run the following to disable ertm (which somehow makes pairing work, at least sometimes)
+echo 'Y' > /sys/module/bluetooth/parameters/disable_ertm
