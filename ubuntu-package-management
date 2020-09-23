@@ -14,4 +14,7 @@ sudo apt upgrade
 ## List all services 
 systemctl -at service
 
+# Remove package
+sudo apt-get remove <package-name>
+
 
