@@ -5,3 +5,5 @@ Predicting time until impact: https://www.youtube.com/watch?v=WQvFrgUA3yA&featur
 Footstep Sounds: https://www.youtube.com/watch?v=LPtDqsMFFys
 
 Spawning Meshes Along a Spline: https://www.youtube.com/watch?v=dsr0XGfHV8M&feature=youtu.be
+
+Road Splines On Terrain: https://www.youtube.com/watch?v=8WIWuybAKj4
